@@ -16,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        self.window  = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+//        self.window.rootViewController = [UBLaunchManager launchViewController];
+//        [self.window makeKeyAndVisible];
+        self.window = UIWindow.init(frame:UIScreen.main.bounds)
+        self.window?.rootViewController = HHSTabBarController.init()
+        self.window?.makeKeyAndVisible()
         return true
     }
 

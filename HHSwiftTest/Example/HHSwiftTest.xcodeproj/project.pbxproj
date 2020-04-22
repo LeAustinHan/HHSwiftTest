@@ -10,6 +10,9 @@
 		0450023D244FEE0900ADFF0B /* HHSLearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450023C244FEE0900ADFF0B /* HHSLearView.swift */; };
 		0450023F244FF0FB00ADFF0B /* HHSLearnUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450023E244FF0FB00ADFF0B /* HHSLearnUpView.swift */; };
 		0450024324503DB400ADFF0B /* HHSFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450024224503DB400ADFF0B /* HHSFirstViewController.swift */; };
+		0450024524504BFE00ADFF0B /* HHSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450024424504BFE00ADFF0B /* HHSTabBarController.swift */; };
+		04500247245051A800ADFF0B /* HHSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04500246245051A800ADFF0B /* HHSBaseViewController.swift */; };
+		04500249245051E800ADFF0B /* HHSBaseControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04500248245051E800ADFF0B /* HHSBaseControllerViewModel.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 		0450023C244FEE0900ADFF0B /* HHSLearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHSLearView.swift; sourceTree = "<group>"; };
 		0450023E244FF0FB00ADFF0B /* HHSLearnUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHSLearnUpView.swift; sourceTree = "<group>"; };
 		0450024224503DB400ADFF0B /* HHSFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHSFirstViewController.swift; sourceTree = "<group>"; };
+		0450024424504BFE00ADFF0B /* HHSTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHSTabBarController.swift; sourceTree = "<group>"; };
+		04500246245051A800ADFF0B /* HHSBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHSBaseViewController.swift; sourceTree = "<group>"; };
+		04500248245051E800ADFF0B /* HHSBaseControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHSBaseControllerViewModel.swift; sourceTree = "<group>"; };
 		045509A42445B58C00364D76 /* GuidedTour.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GuidedTour.playground; sourceTree = "<group>"; };
 		3743D1E334D13FDF04C7DE57 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		58FFE80B2D43E3A9F680771F /* Pods-HHSwiftTest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHSwiftTest_Example.debug.xcconfig"; path = "Target Support Files/Pods-HHSwiftTest_Example/Pods-HHSwiftTest_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +132,9 @@
 				0450023C244FEE0900ADFF0B /* HHSLearView.swift */,
 				0450023E244FF0FB00ADFF0B /* HHSLearnUpView.swift */,
 				0450024224503DB400ADFF0B /* HHSFirstViewController.swift */,
+				0450024424504BFE00ADFF0B /* HHSTabBarController.swift */,
+				04500246245051A800ADFF0B /* HHSBaseViewController.swift */,
+				04500248245051E800ADFF0B /* HHSBaseControllerViewModel.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -326,10 +335,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HHSwiftTest_Example/Pods-HHSwiftTest_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/HHSwiftTest/HHSwiftTest.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HHSwiftTest.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -367,9 +378,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04500247245051A800ADFF0B /* HHSBaseViewController.swift in Sources */,
 				0450023F244FF0FB00ADFF0B /* HHSLearnUpView.swift in Sources */,
+				04500249245051E800ADFF0B /* HHSBaseControllerViewModel.swift in Sources */,
 				0450024324503DB400ADFF0B /* HHSFirstViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				0450024524504BFE00ADFF0B /* HHSTabBarController.swift in Sources */,
 				0450023D244FEE0900ADFF0B /* HHSLearView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'HHSwiftTest_Example' do
   pod 'HHSwiftTest', :path => '../'
+  pod 'Masonry'
 
   target 'HHSwiftTest_Tests' do
     inherit! :search_paths
@@ -10,6 +11,6 @@ target 'HHSwiftTest_Example' do
     pod 'Nimble', '~> 7.0'
     pod 'FBSnapshotTestCase' , '~> 2.1.4'
     pod 'Nimble-Snapshots' , '~> 6.3.0'
-    pod 'Masonry'
+    
   end
 end

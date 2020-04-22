@@ -164,8 +164,8 @@ yes the world is complex \(tip) and \(weight)
         
         print(learnViewUp.area())
         
-        let firstVCL:HHSFirstViewController = HHSFirstViewController.init()
-        self.navigationController?.pushViewController(firstVCL, animated: true)
+//        let firstVCL:HHSFirstViewController = HHSFirstViewController()
+//        self.navigationController?.pushViewController(firstVCL, animated: true)
     
     }
     
