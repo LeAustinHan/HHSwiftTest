@@ -9,6 +9,8 @@
 import UIKit
 
 import Masonry
+import AFNetworking
+
 
 class HHSFirstViewController: HHSBaseViewController {
 
@@ -31,6 +33,14 @@ class HHSFirstViewController: HHSBaseViewController {
             make?.width.offset()(self.view.frame.size.width/2)
             make?.height.offset()(self.view.frame.size.width*0.25*0.618)
         }
+
+        let paramt:Dictionary = ["appKey":"lbocJ","guid":"e39j9kcahag9jyp4j1hrb0e750m3k7k8","opportunityId":"20002","timestamp":"1587632370000"];
+//        HHSNetWork.get(urlString: "https://dev-dfub-app.test.xdf.cn/api/lbocj/record/getOportunityRecordByOpportunityId.json", parameters: paramt, headers: paramt, success: { (AnyObject?) in
+//
+//        }) { (error:NSError) in
+//
+//        }
+        
     }
     
     

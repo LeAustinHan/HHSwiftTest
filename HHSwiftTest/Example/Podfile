@@ -3,6 +3,7 @@ use_frameworks!
 target 'HHSwiftTest_Example' do
   pod 'HHSwiftTest', :path => '../'
   pod 'Masonry'
+  pod 'AFNetworking'
 
   target 'HHSwiftTest_Tests' do
     inherit! :search_paths
